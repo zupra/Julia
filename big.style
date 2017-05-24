@@ -1,0 +1,251 @@
+@charset "UTF-8"
+
+$blue = #375d61
+$grey_l = #e1e1e1
+$red = #ff5b41
+$grey = #626262
+
+
+@import font
+
+
+
+.wr
+  width 1640px
+  margin auto
+.btn
+  display inline-block
+  background: $red
+  color #FFF
+  padding .2em 1em .4em
+  margin-top 1em
+  //line-height: 1.8
+  text-decoration none
+
+  transition: background-color .4s
+  &:hover
+    background: $red - 10%
+
+
+
+*
+  margin: 0
+  padding 0
+  box-sizing border-box
+
+
+.flex
+  display flex
+
+  img
+    align-self center
+
+
+
+
+body
+  //background: #FCFCFC
+  font 40px 'Graphik LC Web'
+  font-stretch normal
+  color $blue
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
+.h
+  font-size 120% //1.2em
+  font-weight 500
+
+
+s
+  text-decoration none
+  position relative
+  &:before
+    position absolute
+    top 54%
+    width 100%
+    content: ''
+    border-top: 1px solid $blue //lighten( $blue, 10 )
+
+
+.n1
+  //padding-right: 50%
+  color: #FFF
+  height: 943px
+  background url(./img/1.png) center no-repeat
+  ._h
+    font-size: 2em
+    font-weight 300
+    margin-bottom 1em
+
+
+
+.n2.flex
+  padding 2em 0
+  //height: 960px
+  align-items center
+  justify-content space-around
+  .flex
+    width 60%
+    padding-left: 4em
+    align-items flex-end
+    justify-content space-around
+
+
+.n3
+  align-items center
+  justify-content space-between
+  margin-bottom 2em
+
+
+
+.n4
+  padding 1em 0 3em //2em 0 3em
+  background: #FCBE4C
+  color #FFF
+  p
+    line-height: 65px
+  ._h
+    font-size: 90px //2em
+    font-weight 300
+    letter-spacing -1px
+    margin 82px 0 46px //2em 0 1.2em
+  .flex
+    margin-top 1em
+    justify-content space-between    
+    align-items flex-end
+  .item
+    line-height: 65px
+    text-align center
+    b
+      font-weight 500
+
+  center
+    margin-top 2em
+  a
+    display inline-block
+    text-align center
+    text-decoration none
+    color #FFF
+ 
+
+.n5
+  padding 2em 0
+  ._h
+    color $red
+    font-size: 2em
+    font-weight 300
+    margin-bottom 1em
+    letter-spacing -1px
+
+  .flex_1
+    justify-content space-between
+    align-items center
+    // .item
+    //   flex 1
+
+
+
+
+  .ftr
+    //justify-content space-around
+    align-items center //flex-end
+    justify-content space-between
+    >*
+      width 34%
+      //flex 1
+    small
+      //line-height: 28px
+      width 30%
+      font-size: 28px
+      line-height: 40px
+
+
+
+
+//.flex
+.x3
+
+  img
+    margin 1em 0
+  margin: 2em 0
+
+  align-items flex-end
+  justify-content space-between
+  .iten
+    div
+      padding 1em 0 0 1em
+
+    //width 33.3%
+    //display flex
+    //justify-content center
+    //flex-direction column
+
+
+.n6
+  
+  .flex
+    align-items center
+    justify-content space-between
+
+.n6 .bg
+  height: 850px
+  background url(./img/6.png) center no-repeat
+  //margin-bottom 2em
+  margin: 1em -10em 3em;//1em -10em 3em;
+  ._h
+    padding-left: 55%
+    color #FFF
+    font-size: 90px //2em
+    font-weight 300
+    text-align center
+.n7 .bg
+  //margin-top 3em
+  margin: 4em -4em 0
+  height: 1120px //850px
+  background url(./img/7.jpg) center no-repeat
+  ._h
+    margin-top -2.7em
+    padding-left 2em
+    align-self center
+    color #FFF
+    font-size: 90px //2em
+    text-align center
+    font-weight 300
+    letter-spacing -1px
+
+
+
+.n7
+  .flex
+    justify-content space-between
+
+
+
+#text
+  background #DEDEDE
+  color #626262
+  font-size: 24px
+  line-height: 30px
+  .wr
+    padding 2.4em 0
+  
+
+//Доступен в рассрочку
+#byInstallments
+  margin-top 2em
+  i
+    font-style normal
+    border-radius 3px
+    text-align center
+    margin: .1em
+    width 64px
+    height: 64px
+    line-height: 60px
+    background $red
+    color: #FFF
+    align-items center
+  span
+    display inline-block
+    font-size: 24px
+    line-height: 1.3
+    margin: .2em 0 0 .5em
