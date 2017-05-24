@@ -35,7 +35,7 @@ gulp.task('stylusTask', function() {
 		//.pipe(sourcemaps.init())
 		.pipe(stylus({
 			use: [autoprefixer()],
-			compress: true
+			//compress: true
 		}))
 		.on("error", onError)
 		//.pipe(sourcemaps.write('.'))
