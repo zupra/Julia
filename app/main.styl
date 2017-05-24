@@ -1,0 +1,149 @@
+@charset "UTF-8"
+
+$blue = #375d61
+$grey_l = #e1e1e1
+$red = #ff5b41
+$grey = #626262
+
+
+@import font
+
+
+
+.wr
+  width 1640px
+  margin auto
+.btn
+  display inline-block
+  background: $red
+  color #FFF
+  padding .2em 1em .4em
+  margin-top 1em
+  //line-height: 1.8
+  text-decoration none
+
+  transition: background-color .4s
+  &:hover
+    background: $red - 10%
+
+
+
+*
+  margin: 0
+  padding 0
+  box-sizing border-box
+
+
+.flex
+  display flex
+
+  img
+    align-self center
+
+
+body
+  font 40px 'Graphik LC Web'
+  font-stretch normal
+  color $blue
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
+.h
+  font-size 120% //1.2em
+  font-weight 500
+
+
+s
+  text-decoration none
+  position relative
+  &:before
+    position absolute
+    top 54%
+    width 100%
+    content: ''
+    border-top: 1px solid $blue //lighten( $blue, 10 )
+
+
+.n1
+  //padding-right: 50%
+  color: #FFF
+  height: 943px
+  background url(./img/1.png) center no-repeat
+  ._h
+    font-size: 2em
+    font-weight 300
+    margin-bottom 1em
+
+
+
+.n2.flex
+  padding 2em 0
+  //height: 960px
+  align-items center
+  justify-content space-around
+  .flex
+    width 60%
+    padding-left: 4em
+    align-items flex-end
+    justify-content space-around
+
+
+.n3
+  align-items center
+  justify-content space-between
+  margin-bottom 2em
+
+
+
+.n4
+  padding 2em 0 3em
+  background: #FCBE4C
+
+  color #FFF
+  ._h
+    font-size: 2em
+    font-weight 300
+  .flex
+    margin-top 1em
+    justify-content space-between    
+    align-items flex-end
+  .item
+    text-align center
+  center
+    margin-top 2em
+    a
+      display inline-block
+      text-align center
+      text-decoration none
+      color #FFF
+
+
+.n5
+  padding 2em 0
+  ._h
+    color $red
+    font-size: 2em
+    font-weight 300
+    margin-bottom 1em
+
+  .flex_1
+    justify-content space-between
+    align-items center
+  .item
+    flex 1
+
+  //.flex
+  .x3
+    text-align center
+    //align-items center
+    align-items flex-end
+    justify-content space-between
+    .iten
+      flex 1
+
+
+  .ftr
+    //justify-content space-around
+    align-items flex-end
+    >*
+      flex 1
