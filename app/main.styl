@@ -191,7 +191,7 @@ s
   height: 850px
   background url(./img/6.png) center no-repeat
   //margin-bottom 2em
-  margin: 1em -16em 3em;
+  margin: 1em -10em 3em;//1em -10em 3em;
   ._h
     padding-left: 55%
     color #FFF
@@ -200,10 +200,11 @@ s
     text-align center
 .n7 .bg
   //margin-top 3em
-  margin: 4em -3em 0
+  margin: 4em -4em 0
   height: 850px
   background url(./img/7.jpg) center no-repeat
   ._h
+    margin-top -1.4em
     padding-left 2em
     align-self center
     color #FFF
@@ -215,7 +216,7 @@ s
 
 
 .n7
-  flex
+  .flex
     justify-content space-between
 
 
@@ -229,14 +230,22 @@ s
     padding 2.4em 0
   
 
-/*
-
-//--- 7
-//- .n7.wr
-
-//-   .bg.flex
-//-     img(src="./img/7.jpg", alt="")
-//-     h1 Пусть это лето будет особенным
-
-
-*/
+//Доступен в рассрочку
+#byInstallments
+  margin-top 2em
+  i
+    font-style normal
+    border-radius 3px
+    text-align center
+    margin: .1em
+    width 64px
+    height: 64px
+    line-height: 64px
+    background $red
+    color: #FFF
+    align-items center
+  span
+    display inline-block
+    font-size: 24px
+    line-height: 1.3
+    margin: .1em 0 0 .5em
